@@ -9,12 +9,16 @@ const int rojo2 = 13;
 volatile int tiempo = 1000; 
 
 void mas(){
+  if(tiempo<=1500){
   delay(20);
-  tiempo++;
+  tiempo = tiempo + 5;
+  }
 }
 void menos(){
-  tiempo--;
+  if(tiempo > 6){
+  tiempo = tiempo - 5;
   delay(20);
+  }
 }
  
 void setup() {
